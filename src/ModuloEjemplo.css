@@ -1,0 +1,46 @@
+.stand-compras {
+  min-height: 45vh;
+  max-height: 90vh;
+  max-width: 30vh;
+  width: 45%;
+
+  float: left;
+  
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-bottom: 1vh;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  background-color: #2e4a80;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-sc {
+    animation: App-logo-spin-sc infinite 20s linear;
+  }
+}
+
+h1 {
+  font-size: calc(10px + 2vmin);
+}
+
+ul.list-social {
+  text-align: left;
+  list-style-type: circle;
+}
+
+@keyframes App-logo-spin-sc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
