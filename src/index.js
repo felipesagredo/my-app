@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import ShoppingList from './ModuloEjemplo';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='stand-logo'></div>
+      <App />
+    <div className='stand-compras'>
+      <ShoppingList/>
+    </div>
   </React.StrictMode>
 );
 

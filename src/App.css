@@ -1,11 +1,12 @@
 .App {
   text-align: center;
-  width: 100%;
 }
 
 .App-logo {
-  height: 20vmin;
+  max-width: 20vh;
+  width: 50vh;
   pointer-events: none;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,15 +16,21 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 90vh;
-  max-width: 20vh;
-  display: flex;
-  flex-direction: column;
+  
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-bottom: 1vh;
+  
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-color: #282c34;
+
+  /*unicode-bidi: bidi-override;*/
 }
 
 .App-link {
