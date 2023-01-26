@@ -21,9 +21,13 @@
   
 }
 
+ul.list-social {
+  margin: 15px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo-sc {
-    animation: App-logo-spin-sc infinite 20s linear;
+    animation: App-logo-spin-sc infinite 40s linear;
   }
 }
 
