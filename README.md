@@ -7,7 +7,11 @@ Este proyecto corre la tecnología de [Create React App](https://github.com/face
 Este proyecto contiene varios modulos que puedes usar en una misma pantalla
 
 ### `Sistema de Compras`
+Se encarga de buscar productos o venderlos
 ### `Galeria de Imágenes`
+Visualiza imagenes
 ### `Juego TicTacToe`
+Pequeño juego clásico
 ### `...`
+Futuros módulos
 
