@@ -6,13 +6,6 @@
   margin-top: 0%;
 }
 
-.App-logo {
-  max-width: 20vh;
-  width: 50vh;
-  pointer-events: none;
-  justify-content: center;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 25s linear;

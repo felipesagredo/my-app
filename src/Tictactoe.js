@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 //import ReactDOM from 'react-dom/client';
-import './Babel.css';
+import './Tictactoe.css';
 
 class Square extends React.Component {
     constructor(props){
@@ -64,7 +64,7 @@ render() {
         {this.renderSquare(7)}
         {this.renderSquare(8)}
         </div>
-        <img src={logo} className="App-logo-gato" alt="logo" />
+        <img src={logo} className="App-logo-sc" alt="logo" />
         <p>Tic-Tac-Toe!</p>
     </div>
     );

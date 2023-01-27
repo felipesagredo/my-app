@@ -1,9 +1,8 @@
 .stand-compras {
-  min-height: 45vh;
-  max-height: 90vh;
+  min-height: fit-content;
   max-width: 30vh;
-  width: 45%;
-
+  width: max-content;
+  
   float: left;
   
   padding-left: 1vh;
@@ -13,7 +12,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   text-align: center;
   font-size: calc(5px + 2vmin);
   color: white;
@@ -23,12 +21,6 @@
 
 ul.list-social {
   margin: 15px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo-sc {
-    animation: App-logo-spin-sc infinite 40s linear;
-  }
 }
 
 h1 {
@@ -46,5 +38,11 @@ ul.list-social {
   }
   to {
     transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-sc {
+    animation: App-logo-spin-sc infinite 40s linear;
   }
 }

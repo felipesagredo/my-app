@@ -17,7 +17,7 @@ function App() {
           Documentación de React
         </a>
         <br></br>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo-sc" alt="logo" />
       </header>
     </div>
   );
