@@ -14,11 +14,10 @@
     object-fit: cover;
     opacity: .7;
     transition: 0.6s ease;
-    filter: contrast(150%);
 }
 
 .GaleriaSection img:hover {
-    cursor: crosshair;
+    cursor: grab;
     width: 50%;
     opacity: 1;
     filter: contrast(120%);
