@@ -2,24 +2,17 @@
   text-align: center;
 }
 
-.App-logo {
-  max-width: 20vh;
-  width: 50vh;
-  pointer-events: none;
-  justify-content: center;
+.stand-logo{
+  margin-top: 0%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
 .App-header {
-  
-  padding-left: 1vh;
-  padding-right: 1vh;
-  padding-bottom: 1vh;
   
   align-items: center;
   justify-content: center;

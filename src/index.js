@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import ShoppingList from './ModuloEjemplo';
+import Game from './Tictactoe';
+import GaleriaFotos from './GaleriaFotos';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +14,12 @@ root.render(
       <App />
     <div className='stand-compras'>
       <ShoppingList/>
+    </div>
+    <div className='stand-game'>
+      <Game/>
+    </div>
+    <div className='stand-fotos'>
+      <GaleriaFotos/>
     </div>
   </React.StrictMode>
 );
