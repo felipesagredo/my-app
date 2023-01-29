@@ -7,7 +7,7 @@ import './GaleriaFotos.css';
 function GaleriaFotos() {
   return (
     <div className='GaleriaFotos'>
-        <p>Galeria Fotos</p>
+        <p>Breaking Bad</p>
       <section className='GaleriaSection'>
         <img src={img1} className="Img-bd" alt='bd'/>
         <img src={img2} className="Img-bd" alt='bd'/>

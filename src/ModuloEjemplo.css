@@ -43,6 +43,6 @@ ul.list-social {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo-sc {
-    animation: App-logo-spin-sc infinite 40s linear;
+    animation: App-logo-spin-sc infinite 5s linear;
   }
 }
