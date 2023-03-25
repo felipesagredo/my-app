@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import './Tictactoe.css';
+import logo from '../img/logo.svg';
+import '../css/Tictactoe.css';
 
 function Square(props) {
     return (
@@ -8,7 +8,7 @@ function Square(props) {
         {props.value}
       </button>
     );
-  }
+}
 
 function calculateWinner(squares) {
     const lines = [
@@ -24,8 +24,9 @@ function calculateWinner(squares) {
     for (let i = 0; i < lines.length; i++) {
         const [a, b, c] = lines[i];
         if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+            console.log('El ganador es: ' + squares[a]);
             return squares[a];
-        }
+        } 
     }
 
     return null;
@@ -43,6 +44,9 @@ class Board extends React.Component {
     handleClick(i){
         const squares = this.state.squares.slice();
         if (calculateWinner(squares) || squares[i]) {
+            console.log('Jugador: ' + squares[i]);
+            console.log('Turno Siguienteee: ' + (this.state.xIsNext ? 'X' : 'O'));
+            
             return;
         }
         squares[i] = this.state.xIsNext ? 'X' : 'O';
@@ -62,11 +66,13 @@ class Board extends React.Component {
     render() {
         const winner = calculateWinner(this.state.squares);
         let status;
+        let nextPlayer;
 
         if (winner) {
             status = 'Ganador: ' + winner;
         } else {
             status = 'Ahora juega: ' + (this.state.xIsNext ? 'X' : 'O');
+            nextPlayer = 'Turno Siguiente: ' + (this.state.xIsNext ? 'O' : 'X');
         }
 
         return (
@@ -88,7 +94,9 @@ class Board extends React.Component {
             {this.renderSquare(8)}
             </div>
             <img src={logo} className="App-logo-sc" alt="logo" />
+            <div className='NexPlayer'>{nextPlayer}</div>
             <p>Tic-Tac-Toe!</p>
+
         </div>
         );
     }
@@ -99,7 +107,7 @@ class Game extends React.Component {
         return (
         <div className="game">
             <div className="game-board">
-            <Board />
+                <Board />
             </div>
             <div className="game-info">
             <div>{/* status */}</div>

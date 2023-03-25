@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import img1 from './img/breakingbad.jpg'
-import img2 from './img/breakingbad_2.jpg'
-import img3 from './img/breakingbad_3.jpg'
-import './GaleriaFotos.css';
+import logo from '../img/logo.svg';
+import img1 from '../img/breakingbad.jpg'
+import img2 from '../img/breakingbad_2.jpg'
+import img3 from '../img/breakingbad_3.jpg'
+import '../css/GaleriaFotos.css';
 
 function GaleriaFotos() {
   return (

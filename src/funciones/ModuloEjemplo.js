@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './ModuloEjemplo.css';
+import logo from '../img/logo.svg';
+import '../css/ModuloEjemplo.css';
 
 class ShoppingList extends React.Component {
     render() {
       return (
         <div className="shopping-list">
           <h1>Sistema de Compras {this.props.name}</h1>
-          <ul class="list-social">
+          <ul className="list-social">
             <li>Iniciar sesion</li>
             <li>Registrarse</li>
             <li>Buscar productos</li>

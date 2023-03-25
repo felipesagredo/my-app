@@ -1,24 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import ShoppingList from './ModuloEjemplo';
-import Game from './Tictactoe';
-import GaleriaFotos from './GaleriaFotos';
+import './css/index.css';
+import App from './funciones/App';
+import ShoppingList from './funciones/ModuloEjemplo';
+import Game from './funciones/Tictactoe';
+import TodoList from './funciones/TodoList';
+import GaleriaFotos from './funciones/GaleriaFotos';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='stand-logo'></div>
-      <App />
-    <div className='stand-compras'>
+    
+    <div>
+      <App/>
       <ShoppingList/>
-    </div>
-    <div className='stand-game'>
       <Game/>
-    </div>
-    <div className='stand-fotos'>
+      <TodoList/>
       <GaleriaFotos/>
     </div>
   </React.StrictMode>
